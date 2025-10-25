@@ -34,9 +34,8 @@ La solución propuesta se implementará en un microcontrolador que coordina la l
 - **LED adicional** (luz de seguridad/paracaídas)
 - **Resistencias 220Ω** (para LEDs)
 - **Cables de conexión**
+![WhatsApp Image 2025-10-25 at 16 32 42](https://github.com/user-attachments/assets/72c7e78c-1959-4303-b8e2-f1c121a6097c)
 
-
-![WhatsApp Image 2025-10-02 at 13 57 07](https://github.com/user-attachments/assets/c756afd3-715d-4daf-af81-1603462fb952)
 
 ## 🔌 Diagrama de Conexión
 
