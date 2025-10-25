@@ -1,4 +1,4 @@
-# Laboratorio Nº 2 - OpenPLC.
+# Laboratorio Nº 2 - OpenPLC
 ## Integrantes del grupo Transferitos:
   - Beneyto, Mateo.
   - Castro, Mauricio Nicolás.
