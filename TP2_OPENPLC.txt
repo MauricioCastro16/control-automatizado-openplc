@@ -1,0 +1,68 @@
+Tecnologías para la Automatización ISI - 4to Año, 2025
+
+Docentes: Ing. Arturo Castaño, Ing. Dominga C. Aquino, Aux. Carlos G.
+Pérez
+
+TRABAJO PRÁCTICO DE LABORATORIO 2: OPENPLC El grupo deberá, partiendo
+del diseño realizado en el TP1: Microcontroladores, reimplementar al
+menos un lazo de control perteneciente al diseño original, utilizando
+OpenPLC corriendo sobre el microcontrolador que el grupo tenga
+destinado. El lenguaje a utilizar será LD (Ladder Diagram, lenguaje de
+programación parte del estándar IEC 61131-3).
+
+Lineamientos del trabajo:
+
+1)  El grupo deberá reimplementar al menos un lazo de control de los
+    propuestos en el TP1: Microcontroladores.
+
+a.  La reimplementación de un lazo de control entero no siempre será
+    posible, ya que OpenPLC hace uso de pocos pines de entrada/salida en
+    las placas Raspberry Pi Pico W, y LD no cuenta con librerías, como
+    sí lo hacen lenguajes de programación como C y Python. Deberá
+    elegirse el lazo de control que mejor se adapte a las capacidades de
+    OpenPLC y que tenga más posibilidades de reimplementarse por
+    completo.
+
+b.  En caso de ser imposible la reimplementación, el grupo deberá hablar
+    con la cátedra sobre por qué es imposible la reimplementación. Si la
+    cátedra puede proveer una solución, el grupo deberá implementarla.
+    Caso contrario, es preciso documentar las limitaciones propias de
+    Ladder Diagram o de la implementación de OpenPLC que imposibilitan
+    la reimplementación completa, y proponer una posible solución.
+
+c.  No será necesario implementar las funcionalidades que utilicen el
+    puerto serial ni la comunicación HTTP, ya que dentro de OpenPLC no
+    se tiene acceso ni al puerto serial ni a las capacidades de
+    networking de la placa.
+
+2)  La solución deberá estar documentada en su totalidad, con
+    explicaciones textuales de:
+
+a.  El fin del programa.
+b.  Una descripción general de cómo funciona el programa.
+c.  Una descripción detallada de cada bloque o grupo de bloques del
+    programa, y cómo interactúan entre ellos.
+d.  El nivel de detalle deberá ser suficiente para que una persona con
+    escaso conocimiento sobre Ladder Diagram y PLC sea capaz de entender
+    su funcionamiento. Puede asumirse que la persona que lee tiene
+    conocimientos básicos de electrónica y funcionamiento de
+    sensores/actuadores.
+
+Fecha de entrega: lunes 27/10/2025
+
+La entrega constará de: 1. Una descripción detallada del escenario y
+solución planteadas en PDF, con carátula detallando materia, profesores
+e integrantes del grupo. 2. Un diagrama detallado del circuito
+implementado, exportado como imagen. 3. El código fuente del programa
+que corre en el microcontrolador, preferiblemente en un repositorio de
+GitHub público o comprimido junto con el resto del trabajo.
+
+Todo deberá presentarse como un archivo comprimido en el campus virtual.
+
+Existirán dos instancias de muestras de avances los días 13/10/2025 y
+20/10/2025 (no obligatorias) donde los grupos podrán mostrar avances y
+plantear dudas.
+
+Durante todo el período de desarrollo del trabajo, se podrán realizar
+consultas por el campus virtual, al correo
+carlos.g.perez.1992@outlook.com o al grupo de WhatsApp de la materia.

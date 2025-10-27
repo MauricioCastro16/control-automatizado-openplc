@@ -1,0 +1,29 @@
+Informe - Laboratorio Nº 1
+
+Laboratorio Nº 1: Microcontroladores
+
+Universidad Tecnológica Nacional Facultad Regional Resistencia
+
+Materia: ● Tecnologías de la Automatización.
+
+Profesor: ● Aquino, Dominga Aquino. ● Castaño, Arturo. ● Perez, Carlos
+Gilberto.
+
+Autor: ● Beneyto, Mateo. ● Castro, Mauricio Nicolás. ● Kalchichen, Lucas
+Germán. ● Lopez Soto, Martín. ● Peralta Ruiz, Nadine Andrea.
+
+6 de Octubre de 2025
+
+Índice Descripción del Escenario…………………………………………………………………………………………… 3
+Turismo estratosférico…………………………………………………………………………………………….3 Sistema de
+Control Automatizado……………………………………………………………………………3 Monitoreo de control
+de propulsión……………………………………………………………………….. 4 Monitoreo de condición de
+eyección / aterrizaje……………………………………………………… 5 Solución
+Planteada……………………………………………………………………………………………………… 7 Circuito de la
+solución implementada………………………………………………………………………….. 8
+Componentes………………………………………………………………………………………………………… 8
+Circuito…………………………………………………………………………………………………………………10 Diagrama de la red
+de microcontroladores y servidores web…………………………………. 12
+
+Descripción del Escenario Turismo estratosférico … (el resto del texto
+omitido para brevedad, se incluiría completo en el archivo) …

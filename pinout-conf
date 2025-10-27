@@ -1,0 +1,7 @@
+Pico 1
+/*******PINOUT CONFIGURATION********
+Digital In:  6 fuego D0, 7 ,8, 9, 10, 11, 12, 13 S de inclinacion      (%IX0.0 - %IX0.7)
+Digital Out: 14 L de inclinacion, 15, 16, 17, 18 R de led, 19 G de led, 20 B de led, 21  (%QX0.0 - %QX0.7)
+Analog In: A1, A2, A3  fuego A0 (26,27,28)             (%IW0 - %IW2)
+Analog Out: 4,5                              (%QW0 - %QW1)
+**********************/
