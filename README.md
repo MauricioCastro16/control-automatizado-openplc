@@ -1,13 +1,20 @@
-# Laboratorio Nº 2 - OpenPLC
-## Integrantes del grupo Transferitos:
-  - Beneyto, Mateo.
-  - Castro, Mauricio Nicolás.
-  - Kalchichen, Lucas Gernán.
-  - Lopez Soto, Martin.
-  - Peralta Ruiz, Nadine Andrea.
+[![Consultar a DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MauricioCastro16/control-automatizado-openplc)
 
+# Sistema de Control Automatizado OpenPLC
 
-## Detalles de la solución:
+[![OpenPLC](https://img.shields.io/badge/OpenPLC-IEC%2061131--3-orange.svg)](https://www.openplcproject.com/)
+
+Sistema de control crítico para vehículos estratosféricos implementado con estándares industriales IEC 61131-3. Proporciona monitoreo en tiempo real de condiciones de seguridad y control automatizado de propulsión mediante lógica determinista.
+
+## Características Principales
+
+- Monitoreo continuo de temperatura y turbulencia mediante sensores KY-026/KY-027
+- Máquina de estados con tres modos: SEGURO, PRECAUCIÓN y PELIGRO
+- Control dinámico de propulsión con motor paso a paso 28BYJ-48
+- Sistema de seguridad con paracaídas automatizado y LEDs indicadores RGB
+- Telemetría en tiempo real vía MQTT para monitoreo remoto
+
+- ## Detalles de la solución:
 La solución propuesta se implementará en un microcontrolador que coordina la lectura de sensores y el accionamiento de actuadores para cumplir los objetivos definidos. A continuación, se detalla cómo se materializa cada uno:
 
 ### Monitoreo de Control de Propulsión
@@ -60,3 +67,38 @@ La solución propuesta se implementará en un microcontrolador que coordina la l
 | 🔴 **PELIGRO** | Rojo | Fuego detectado | ❌ Deshabilitado |
 | 🔵 **PRECAUCIÓN** | Azul | Turbulencia (sin fuego) | ❌ Deshabilitado |
 | 🟢 **SEGURO** | Verde | Sin fuego ni turbulencia | ✅ **Habilitado** |
+
+## Stack Tecnológico
+
+| Categoría | Tecnologías |
+|-----------|-------------|
+| **Frontend** | LEDs RGB, Indicadores visuales |
+| **Backend** | OpenPLC, CircuitPython, Ladder Diagram (LD) |
+| **Herramientas** | Raspberry Pi Pico W, IEC 61131-3, MQTT |
+
+## Arquitectura / Flujo
+
+El sistema implementa una arquitectura híbrida donde OpenPLC ejecuta la lógica de seguridad crítica mediante diagramas de escalera IEC 61131-3, mientras que CircuitPython gestiona periféricos avanzados y comunicaciones. Los sensores alimentan una máquina de estados determinista que controla actuadores y publica telemetría mediante MQTT.
+
+## Instalación y Uso
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/MauricioCastro16/control-automatizado-openplc.git
+cd control-automatizado-openplc
+
+# Instalar dependencias de CircuitPython
+pip install circuitpython-adafruit-motor circuitpython-adafruit-mqtt
+
+# Cargar firmware en Raspberry Pi Pico W
+# Conectar el hardware según diagrama de pines
+# Ejecutar el programa principal
+python3 code.py
+```
+
+```bash
+# Configurar OpenPLC
+# Importar archivo plc.xml en OpenPLC Editor
+# Compilar y cargar en Raspberry Pi Pico W
+# Monitorear mediante cliente MQTT en broker 10.13.100.84
+```
